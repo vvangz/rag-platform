@@ -1,0 +1,6 @@
+export com.huawei.ict.rag.ai.session.AiSession
+
+input AiSessionInput{
+    id?
+    name
+}

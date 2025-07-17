@@ -1,0 +1,10 @@
+export com.huawei.ict.rag.user.User
+
+input UserLoginInput{
+    phone
+    password
+}
+input UserRegisterInput{
+    phone
+    password
+}

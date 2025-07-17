@@ -1,0 +1,6 @@
+export com.huawei.ict.rag.ai.message.AiMessage
+
+input AiMessageInput{
+    #allScalars(AiMessage)
+    id(session)
+}
