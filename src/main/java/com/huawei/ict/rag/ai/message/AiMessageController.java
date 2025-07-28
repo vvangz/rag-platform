@@ -1,6 +1,7 @@
 package com.huawei.ict.rag.ai.message;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.huawei.ict.rag.ai.agent.DateTimeTools;
 import com.huawei.ict.rag.ai.message.dto.AiMessageInput;
 import com.huawei.ict.rag.ai.message.dto.AiMessageWrapper;
 import com.huawei.ict.rag.ai.session.AiSession;
@@ -50,6 +51,7 @@ public class AiMessageController {
         return ChatClient.create(chatModel)
                 .prompt()
                 .user(promptUserSpec -> toPrompt(promptUserSpec, aiMessageWrapper.getMessage()))
+                .tools(new DateTimeTools())
                 .advisors(advisorSpec -> {
                     // 使用历史消息
                     useChatHistory(advisorSpec, aiMessageWrapper.getMessage().getSessionId());

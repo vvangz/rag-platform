@@ -24,7 +24,7 @@ spring:
     ai:
         #智朴AI
         zhipuai:
-            api-key: xxx
+            api-key: 8718608541ac4f27af9753b4ddd18e75.VLcxJBea3kcrqpvP
         vectorstore:
             redis:
                 initialize-schema: true
