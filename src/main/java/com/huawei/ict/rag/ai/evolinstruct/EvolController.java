@@ -1,7 +1,8 @@
 package com.huawei.ict.rag.ai.evolinstruct;
 
 
-import io.github.qifan777.knowledge.ai.evolinstruct.service.EvolService;
+
+import com.huawei.ict.rag.ai.evolinstruct.service.EvolService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
